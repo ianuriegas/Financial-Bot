@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ExpenseController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="702.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ExpenseController">
    <children>
       <Label layoutX="14.0" layoutY="31.0" text="Financial Bot">
          <font>
@@ -61,5 +62,10 @@
       <Button fx:id="add_button" layoutX="14.0" layoutY="495.0" mnemonicParsing="false" onAction="#add_button_clicked" style="-fx-background-color: #4CBB17; -fx-background-radius: 5;" text="Add" textFill="WHITE" />
       <Button fx:id="remove_button" layoutX="14.0" layoutY="542.0" mnemonicParsing="false" onAction="#remove_button_clicked" style="-fx-background-color: #EE4B2B; -fx-background-radius: 5;" text="Remove" textFill="WHITE" />
       <TextField fx:id="id_input" layoutX="82.0" layoutY="542.0" prefHeight="25.0" prefWidth="81.0" promptText="ID Input" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="445.0" layoutY="542.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Finacial_Bot_logo_done.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

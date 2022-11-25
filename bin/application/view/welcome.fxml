@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
@@ -24,5 +25,10 @@
          </font>
       </Label>
       <TextField fx:id="username_label" layoutX="169.0" layoutY="241.0" prefHeight="25.0" prefWidth="257.0" promptText="Your Name" />
+      <ImageView fitHeight="199.0" fitWidth="240.0" layoutX="199.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Finacial_Bot_logo_done.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
