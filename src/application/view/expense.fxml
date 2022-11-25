@@ -13,14 +13,14 @@
             <Font size="23.0" />
          </font>
       </Label>
-      <Label fx:id="username_label" layoutX="458.0" layoutY="31.0" text="CoolUser123">
+      <Label fx:id="username_label" layoutX="404.0" layoutY="31.0" prefHeight="34.0" prefWidth="192.0" text="CoolUser123">
          <font>
             <Font size="23.0" />
          </font>
       </Label>
-      <Label fx:id="total_expense_label" layoutX="199.0" layoutY="28.0" text="Total Expenses $">
+	  <Label fx:id="total_expense_label" layoutX="177.0" layoutY="11.0" prefHeight="74.0" prefWidth="269.0" text="Total Income $" textAlignment="CENTER" wrapText="true">
          <font>
-            <Font size="28.0" />
+            <Font size="23.0" />
          </font>
       </Label>
       <Button fx:id="expense_profit_button" layoutX="221.0" layoutY="86.0" mnemonicParsing="false" onAction="#expense_profit_button_clicked" prefHeight="62.0" prefWidth="158.0" style="-fx-background-radius: 15; -fx-background-color: #C0C0C0;" text="Expense/Profit" textFill="WHITE">
@@ -60,6 +60,6 @@
       <TextField fx:id="input_frequency" layoutX="397.0" layoutY="495.0" prefHeight="15.0" prefWidth="123.0" promptText="Input Frequency" />
       <Button fx:id="add_button" layoutX="14.0" layoutY="495.0" mnemonicParsing="false" onAction="#add_button_clicked" style="-fx-background-color: #4CBB17; -fx-background-radius: 5;" text="Add" textFill="WHITE" />
       <Button fx:id="remove_button" layoutX="14.0" layoutY="542.0" mnemonicParsing="false" onAction="#remove_button_clicked" style="-fx-background-color: #EE4B2B; -fx-background-radius: 5;" text="Remove" textFill="WHITE" />
-      <TextField layoutX="98.0" layoutY="542.0" prefHeight="27.0" prefWidth="93.0" promptText="Input ID" />
+      <TextField fx:id="id_input" layoutX="82.0" layoutY="542.0" prefHeight="25.0" prefWidth="81.0" promptText="ID Input" />
    </children>
 </AnchorPane>
