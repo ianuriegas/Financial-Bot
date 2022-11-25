@@ -18,7 +18,7 @@
             <Font size="23.0" />
          </font>
       </Label>
-      <Label fx:id="total_expense_label" layoutX="199.0" layoutY="28.0" text="Total Expenses $">
+      <Label fx:id="total_expense_label" layoutX="199.0" layoutY="28.0" text="Total Profits $">
          <font>
             <Font size="28.0" />
          </font>
@@ -33,11 +33,11 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
          <columns>
-            <TableColumn prefWidth="75.0" text="ID" />
-            <TableColumn prefWidth="75.0" text="Name" />
-            <TableColumn prefWidth="75.0" text="Amount" />
-            <TableColumn prefWidth="75.0" text="Date" />
-            <TableColumn prefWidth="75.0" text="Frequency" />
+            <TableColumn fx:id="table_id" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="table_name" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="table_amount" prefWidth="75.0" text="Amount" />
+            <TableColumn fx:id="table_date" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="table_freq" prefWidth="75.0" text="Frequency" />
          </columns>
       </TableView>
       <Button fx:id="expense_button" layoutX="401.0" layoutY="86.0" mnemonicParsing="false" onAction="#expense_button_clicked" prefHeight="62.0" prefWidth="158.0" style="-fx-background-radius: 15; -fx-background-color: #EE4B2B;" text="Expense" textFill="WHITE">
@@ -56,9 +56,8 @@
          </font>
       </Label>
       <TextField fx:id="input_name" layoutX="68.0" layoutY="495.0" prefHeight="15.0" prefWidth="123.0" promptText="Input Name" />
-      <TextField fx:id="inputt_date" layoutX="328.0" layoutY="495.0" prefHeight="15.0" prefWidth="123.0" promptText="Input Date" />
-      <TextField fx:id="input_amount" layoutX="199.0" layoutY="495.0" prefHeight="15.0" prefWidth="123.0" promptText="Input Amount" />
-      <TextField fx:id="input_frequency" layoutX="461.0" layoutY="495.0" prefHeight="15.0" prefWidth="123.0" promptText="Input Frequency" />
+      <TextField fx:id="input_amount" layoutX="247.0" layoutY="495.0" prefHeight="15.0" prefWidth="123.0" promptText="Input Amount" />
+      <TextField fx:id="input_frequency" layoutX="419.0" layoutY="495.0" prefHeight="15.0" prefWidth="123.0" promptText="Input Frequency" />
       <Button fx:id="add_button" layoutX="14.0" layoutY="495.0" mnemonicParsing="false" onAction="#add_button_clicked" style="-fx-background-color: #4CBB17; -fx-background-radius: 5;" text="Add" textFill="WHITE" />
       <Button fx:id="remove_button" layoutX="14.0" layoutY="542.0" mnemonicParsing="false" onAction="#remove_button_clicked" style="-fx-background-color: #EE4B2B; -fx-background-radius: 5;" text="Remove" textFill="WHITE" />
       <TextField layoutX="98.0" layoutY="542.0" prefHeight="27.0" prefWidth="93.0" promptText="Input ID" />

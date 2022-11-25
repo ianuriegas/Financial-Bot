@@ -1,6 +1,9 @@
 package application.controller;
 
+import java.io.File;
 import java.io.IOException;
+
+import javax.swing.text.html.ListView;
 
 import application.Main;
 import javafx.event.ActionEvent;
@@ -11,6 +14,10 @@ import javafx.scene.control.Button;
 
 public class WelcomeController {
 
+	
+	
+	
+	
 	@FXML
 	private Button enter_button;
 
@@ -30,6 +37,23 @@ public class WelcomeController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		 try {
+		      File myObj = new File("data.csv");
+		      if (myObj.createNewFile()) {
+		        System.out.println("File created: " + myObj.getName());
+		      } else {
+		        System.out.println("File already exists.");
+		      }
+		    } catch (IOException e) {
+		      System.out.println("An error occurred.");
+		      e.printStackTrace();
+		    }
+		
+		
+		
+		
+		
 	}
 
 //    @FXML
