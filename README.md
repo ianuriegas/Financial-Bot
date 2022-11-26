@@ -1,0 +1,3 @@
+# Financial-Bot
+Financial Bot project for CS-3443
+This Financial Bot is used to calculate all of your expenses! When you first open the program it'll ask for your name to store your Finances. You will then be taken to a page with three tabs: Profit, Expense, and Expense/Profit. Each page has its own use, the profit page will allow the user to input a profit, including the amount, name, and frequency. The expense page will allow you to input the user's expenses including amount, name, and frequency as well. The third tab will calculate your net profit/loss and show it in the form of income while showing you a list of all profits and expenses.
